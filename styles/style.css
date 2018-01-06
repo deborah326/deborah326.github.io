@@ -20,6 +20,7 @@ body {
 #welcome h1 {
   padding-top: 230px;
   font-size: 800%;
+  color: white;
   margin-left: 5%
 }
 
@@ -27,6 +28,7 @@ body {
   margin-top: 5%;
   margin-left: 60%;
   font-size: 180%;
+  color: white;
 }
 
 @media all and (max-width: 600px) and (min-width: 300px) {
