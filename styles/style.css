@@ -19,16 +19,16 @@ body {
 
 #welcome h1 {
   padding-top: 230px;
-  font-size: 800%;
-  color: #D4F1EF;
-  margin-left: 5%
+  font-size: 750%;
+  color: #E9F8F7;
+  margin-left: 10%
 }
 
 #welcome p {
   margin-top: 5%;
   margin-left: 60%;
   font-size: 180%;
-  color: #D4F1EF;
+  color: #E9F8F7;
 }
 
 @media all and (max-width: 700px) and (min-width: 480px) {
