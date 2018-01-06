@@ -19,9 +19,10 @@ body {
 
 #welcome h1 {
   padding-top: 230px;
-  font-size: 750%;
+  font-size: 700%;
   color: #E9F8F7;
-  margin-left: 25%
+  margin-left: 25%;
+  text-align: right;
 }
 
 #welcome p {
@@ -31,19 +32,19 @@ body {
   color: #E9F8F7;
 }
 
-@media all and (max-width: 700px) and (min-width: 480px) {
-  #welcome h1{
-    font-size: 400%;
-  }
-  #welcome p{
-    font-size: 120%;
-  }
-  #quote {
-    font-size: 10px;
-  } 
-  #address {
-    margin-left: -50px;;
-  }
+@media all and (max-width: 700px) and (min-width: 300px) {
+    #welcome h1{
+        font-size: 400%;
+    }
+    #welcome p{
+        font-size: 120%;
+    }
+    #quote {
+        font-size: 10px;
+    } 
+    #address {
+        margin-left: -50px;;
+    }
 }
 
 .navbar {
