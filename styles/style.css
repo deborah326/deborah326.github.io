@@ -8,7 +8,7 @@ body {
   margin-top: -100px;
   padding-bottom: 50px;
   height: 800px;
-  background: url(http://trunklog.com/wp-content/uploads/2015/04/138-trunklog-stock.jpg);
+  background: url(images/cover.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -29,7 +29,7 @@ body {
   font-size: 180%;
 }
 
-@media all and (max-width: 700px) and (min-width: 300px) {
+@media all and (max-width: 600px) and (min-width: 300px) {
   #welcome h1{
     font-size: 400%;
   }
