@@ -62,6 +62,25 @@ $(document).ready(function() {
 
   $("#quoteButton").click();
 
+  window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }
+
+    (document, "script", "twitter-wjs"));
+
   var myCenter = new google.maps.LatLng(22.284684, 114.147292);
 
   function initialize() {
@@ -82,24 +101,5 @@ $(document).ready(function() {
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
-
-  window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }
-
-    (document, "script", "twitter-wjs"));
 
 }); //Closing tag for document ready function
