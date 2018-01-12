@@ -74,7 +74,7 @@ $(document).ready(function() {
       },
       {
         href: "images/faleportrait.jpg",
-        title: 'Male ortrait'
+        title: 'Male portrait'
       }
     ]);
   });
