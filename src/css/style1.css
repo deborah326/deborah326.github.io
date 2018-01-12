@@ -12,7 +12,7 @@
   background: transparent url(../images/pattern.png) repeat top left;
 }
 
-.cb-slideshow li span {
+.cb-slideshow>li span {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -32,7 +32,7 @@
   animation: imageAnimation 36s linear infinite 0s;
 }
 
-.cb-slideshow li div {
+.cb-slideshow>li div {
   z-index: 1000;
   position: absolute;
   bottom: 30px;
@@ -48,18 +48,18 @@
   animation: titleAnimation 36s linear infinite 0s;
 }
 
-.cb-slideshow li div h3 {
+.cb-slideshow>li div h3 {
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
   font-size: 240px;
   padding: 0;
   line-height: 200px;
 }
 
-.cb-slideshow li:nth-child(1) span {
+.cb-slideshow>li:nth-child(1) span {
   background-image: url(../../images/yosemite.jpg)
 }
 
-.cb-slideshow li:nth-child(2) span {
+.cb-slideshow>li:nth-child(2) span {
   background-image: url(../../images/mountfuji.jpg);
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -68,7 +68,7 @@
   animation-delay: 6s;
 }
 
-.cb-slideshow li:nth-child(3) span {
+.cb-slideshow>li:nth-child(3) span {
   background-image: url(../../images/aspen.jpg);
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
@@ -106,7 +106,7 @@
 }
 */
 
-.cb-slideshow li:nth-child(2) div {
+.cb-slideshow>li:nth-child(2) div {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -o-animation-delay: 6s;
@@ -114,7 +114,7 @@
   animation-delay: 6s;
 }
 
-.cb-slideshow li:nth-child(3) div {
+.cb-slideshow>li:nth-child(3) div {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
   -o-animation-delay: 12s;
@@ -344,18 +344,18 @@
 
 /* Show at least something when animations not supported */
 
-.no-cssanimations .cb-slideshow li span {
+.no-cssanimations .cb-slideshow>li span {
   opacity: 1;
 }
 
 @media screen and (max-width: 1140px) {
-  .cb-slideshow li div h3 {
+  .cb-slideshow>li div h3 {
     font-size: 140px
   }
 }
 
 @media screen and (max-width: 600px) {
-  .cb-slideshow li div h3 {
+  .cb-slideshow>li div h3 {
     font-size: 80px
   }
 }
