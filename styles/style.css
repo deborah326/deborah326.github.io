@@ -1,6 +1,4 @@
-<style>
-
-body {
+<style>body {
   position: relative;
 }
 
@@ -33,18 +31,19 @@ body {
 }
 
 @media all and (max-width: 700px) and (min-width: 300px) {
-    #welcome h1{
-        font-size: 400%;
-    }
-    #welcome p{
-        font-size: 120%;
-    }
-    #quote {
-        font-size: 10px;
-    } 
-    #address {
-        margin-left: -50px;;
-    }
+  #welcome h1 {
+    font-size: 400%;
+  }
+  #welcome p {
+    font-size: 120%;
+  }
+  #quote {
+    font-size: 10px;
+  }
+  #address {
+    margin-left: -50px;
+    ;
+  }
 }
 
 .navbar {
@@ -90,7 +89,7 @@ span {
   width: 100vw;
 }
 
-.affix ~ .container-fluid {
+.affix~.container-fluid {
   position: relative;
 }
 
@@ -161,16 +160,19 @@ h2 {
   height: auto;
 }
 
-#artPortfolio {
+#artPortfolio #photographyPortfolio #webPortfolio {
+  padding-top: 20px;
   padding-bottom: 10px;
   text-decoration: underline;
 }
 
+/*
 #webPortfolio {
   padding-top: 20px;
   padding-bottom: 10px;
   text-decoration: underline;
 }
+*/
 
 #contact {
   padding-top: 50px;
@@ -191,7 +193,7 @@ h2 {
   margin-top: -20px;
 }
 
-.socialMedia ul{
+.socialMedia ul {
   padding-top: 30px;
   float: left;
   width: 100%;
