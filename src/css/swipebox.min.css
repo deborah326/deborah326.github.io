@@ -68,6 +68,10 @@ html.swipebox-html.swipebox-touch {
   vertical-align: middle
 }
 
+#swipebox-slider .slide img {
+  position: relative
+}
+
 #swipebox-slider .slide .swipebox-video-container {
   background: 0 0;
   max-width: 1140px;
