@@ -62,6 +62,44 @@ $(document).ready(function() {
 
   $("#quoteButton").click();
 
+  var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [{
+        src: 'images/femaleportrait',
+        w: 964,
+        h: 1024
+      },
+      {
+        src: 'images/maleportrait',
+        w: 1024,
+        h: 683
+      }
+    ];
+
+    // define options (if needed)
+    var options = {
+      // history & focus options are disabled on CodePen
+      history: false,
+      focus: false,
+
+      showAnimationDuration: 0,
+      hideAnimationDuration: 0
+
+    };
+
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+  };
+
+  openPhotoSwipe();
+
+  document.getElementById('photoSwipeBtn').onclick = openPhotoSwipe;
+
+
+
+
   var myCenter = new google.maps.LatLng(22.284684, 114.147292);
 
   function initialize() {
