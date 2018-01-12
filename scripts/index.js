@@ -62,6 +62,8 @@ $(document).ready(function() {
 
   $("#quoteButton").click();
 
+  $('.swipebox').swipebox();
+
   var myCenter = new google.maps.LatLng(22.284684, 114.147292);
 
   function initialize() {
