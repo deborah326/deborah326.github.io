@@ -62,10 +62,27 @@ $(document).ready(function() {
 
   $("#quoteButton").click();
 
-  $('#gallery').click(function(e) {
+  $('#gallery1').click(function(e) {
     e.preventDefault();
     $.swipebox([{
         href: "images/femaleportrait.jpg",
+        title: 'Female portrait'
+      },
+      {
+        href: "images/oldportrait.jpg",
+        title: 'Old man portrait'
+      },
+      {
+        href: "images/faleportrait.jpg",
+        title: 'Male portrait'
+      }
+    ]);
+  });
+
+  $('#gallery2').click(function(e) {
+    e.preventDefault();
+    $.swipebox([{
+        href: "images/sunset.jpg",
         title: 'Female portrait'
       },
       {
