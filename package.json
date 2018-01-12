@@ -1,9 +1,10 @@
 {
   "name": "debleong",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "webpack",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,15 @@
   },
   "homepage": "https://github.com/deborah326/deborah326.github.io#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-images": "^0.5.14",
     "react-photo-gallery": "^6.0.22"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
