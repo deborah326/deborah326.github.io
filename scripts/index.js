@@ -83,7 +83,7 @@ $(document).ready(function() {
     e.preventDefault();
     $.swipebox([{
         href: "images/sunset.jpg",
-        title: 'Female portrait'
+        title: 'Sunset, West Australia, September 2016'
       },
       {
         href: "images/oldportrait.jpg",
