@@ -67,12 +67,12 @@ $(document).ready(function() {
 
     // build items array
     var items = [{
-        src: 'images/femaleportrait',
+        src: "images/femaleportrait.jpg",
         w: 964,
         h: 1024
       },
       {
-        src: 'images/maleportrait',
+        src: "images/maleportrait.jpg",
         w: 1024,
         h: 683
       }
