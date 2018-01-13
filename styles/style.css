@@ -2,12 +2,23 @@
   position: relative;
 }
 
+#preload-01 {
+  background: url("../images/yosemite.jpg") no-repeat -9999px -9999px;
+}
+
+#preload-02 {
+  background: url("../images/mountfuji.jpg") no-repeat -9999px -9999px;
+}
+
+#preload-03 {
+  background: url("../images/aspen.jpg") no-repeat -9999px -9999px;
+}
+
 #welcome {
   width: 100%;
   margin-top: -100px;
   padding-bottom: 50px;
   height: 900px;
-  z-index: 0;
   background-image: url("../images/yosemite.jpg");
   background-repeat: no-repeat;
   /*
@@ -30,14 +41,13 @@
 
 @keyframes slider {
   0% {
-    background-image: url(../images/yosemite.jpg);
+    background-image: url("../images/yosemite.jpg");
   }
-  50% {
-    background-image: url(../images/mountfuji.jpg);
+  50.000001% {
+    background-image: url("../images/mountfuji.jpg");
   }
   100% {
-    background-image: url(../images/aspen.jpg);
-    animation-timing-function: ease-in-out;
+    background-image: url("../images/aspen.jpg");
   }
 }
 
