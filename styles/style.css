@@ -3,22 +3,49 @@
 }
 
 #welcome {
+  width: 100%;
   margin-top: -100px;
   padding-bottom: 50px;
   height: 900px;
-  background: url("../images/yosemite.jpg");
+  z-index: 0;
+  background-image: url("../images/yosemite.jpg");
   background-repeat: no-repeat;
+  /*
+  -webkit-background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  */
   background-size: cover;
   background-position: center;
+  animation-name: slider;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  opacity: 0.9;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(../images/yosemite.jpg);
+  }
+  50% {
+    background-image: url(../images/mountfuji.jpg);
+  }
+  100% {
+    background-image: url(../images/aspen.jpg);
+    animation-timing-function: ease-in-out;
+  }
 }
 
 #welcome h1 {
   padding-top: 230px;
   font-size: 700%;
-  color: #E9F8F7;
+  color: #ffffff;
+  /*color: #E9F8F7;*/
   margin-left: 25%;
   text-align: right;
 }
@@ -27,7 +54,8 @@
   margin-top: 5%;
   margin-left: 60%;
   font-size: 180%;
-  color: #E9F8F7;
+  color: #ffffff;
+  /*color: #E9F8F7;*/
 }
 
 #instafeed {
