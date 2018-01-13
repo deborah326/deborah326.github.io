@@ -15,22 +15,15 @@
 }
 
 #welcome {
-  width: 100%;
   margin-top: -100px;
   padding-bottom: 50px;
   height: 900px;
   background-image: url("../images/yosemite.jpg");
   background-repeat: no-repeat;
-  /*
-  -webkit-background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  */
   background-size: cover;
   background-position: center;
   animation-name: slider;
-  animation-duration: 8s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-play-state: running;
