@@ -59,7 +59,7 @@ $(document).ready(function() {
       $("#display").text(currentTotal);
       currentTotal = 0;
     } else if (subTotal === 0) {
-      subTotal = (parseFloat(newNumber)/ 100);
+      subTotal = (parseFloat(newNumber) / 100);
       $("#display").text(subTotal.toFixed(6));
     } else if (subTotal != 0) {
       subTotal = (subTotal / 100);

@@ -62,16 +62,6 @@ $(document).ready(function() {
 
   $("#quoteButton").click();
 
-  $('.instagrammin').everydayImInstagrammin({
-    clientID: 'debz326',
-    accessToken: '345736679.1677ed0.9dbc4344fac048619f5cfb21435a8e96',
-    urlType: InstaUser,
-    numberPics: 300,
-    imgClass: 'insta-img',
-    captions: true,
-    captionAlign: 'bottom',
-  });
-
   $('#gallery1').click(function(e) {
     e.preventDefault();
     $.swipebox([{
