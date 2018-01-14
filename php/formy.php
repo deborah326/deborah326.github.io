@@ -1,7 +1,7 @@
 ﻿<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$to = "deborah326@gmail.com";
+$to = 'deborah326@gmail.com';
 $subject = "New email from your site!";
 $name_field = $_POST['name'];
 $email_field = $_POST['email'];
@@ -11,7 +11,7 @@ $message = $_POST['message'];
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-$title = '<h3>Hello, sir! You have received a new mail via <span style="color: #3498db;">For</span><span style="color: #f1c40f;">my</span> on your awesome website!</h3>';
+$title = '<h3>Hi! You have received a new mail via <span style="color: #3498db;">For</span><span style="color: #f1c40f;">my</span> on your awesome website!</h3>';
 
 $body = "$title
         <br/>
