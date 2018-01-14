@@ -12,7 +12,7 @@ $(document).ready(function() {
     quote: "If your mind is empty, it is always ready for anything, it is open to everything. In the beginner's mind there are many possibilities, but in the expert's mind there are few.",
     author: "Shunryu Suzuki"
   }, {
-    quote: "A wonderful painting is the result fo the feeling in your fingers.  If you have teh feeling of the thickness of the ink in your brush, the painting is already there before you paint.  When you dip your brush into the ink you already know the result of your drawing, or else you cannot paint.  So before you do something, 'being' is there, the result is there.",
+    quote: "A wonderful painting is the result of the feeling in your fingers.  If you have the feeling of the thickness of the ink in your brush, the painting is already there before you paint.  When you dip your brush into the ink you already know the result of your drawing, or else you cannot paint.  So before you do something, 'being' is there, the result is there.",
     author: "Shunryu Suzuki"
   }, {
     quote: "Empty your mind, be formless, shapeless - like water. Now you put water into a cup, it becomes the cup, you put water into a bottle, it becomes the bottle, you put it in a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend.",

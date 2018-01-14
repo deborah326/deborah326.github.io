@@ -72,12 +72,12 @@ $(document).ready(function() {
   $("input, textarea").focus(function() {
     $(this).prev().children().addClass("active");
     $(this).next().addClass("active");
-    $(this).parent().find(".lenghtCounter").show();
+    $(this).parent().find(".lengthCounter").show();
   }).blur(function() {
     $("svg").removeClass("active invalid");
     $(this).removeClass("invalid");
     $("label").removeClass("active invalid");
-    $(".lenghtCounter").hide();
+    $(".lengthCounter").hide();
   })
   $(".input-field i").click(function() {
     $(this).next().focus();
@@ -146,7 +146,7 @@ $(document).ready(function() {
 // Here we count symbols in input fields
 $(document).delegate('input', 'keyup', function() {
   var field = $(this),
-    counter = $(this).parent().find(".lenghtCounter span");
+    counter = $(this).parent().find(".lengthCounter span");
 
   field.bind('keydown', function() {
     setTimeout(function() {
