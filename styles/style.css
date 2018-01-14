@@ -271,13 +271,13 @@ h2 {
 .socialMedia ul {
   padding-top: 30px;
   width: 100%;
-  padding-left: 41%;
+  padding-right: 41%;
   padding-top: 100px;
 }
 
 .socialMedia ul li {
   list-style-type: none;
-  float: left;
+  float: right;
 }
 
 .socialMedia ul li a i {
