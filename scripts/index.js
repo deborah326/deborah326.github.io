@@ -79,43 +79,28 @@ $(document).ready(function() {
     ]);
   });
 
-  $('#gallery2').click(function(e) {
-    e.preventDefault();
-    $.swipebox([{
-        href: "images/sunset.jpg",
-        title: 'Sunset, West Australia, September 2016'
-      },
-      {
-        href: "images/oldportrait.jpg",
-        title: 'Old man portrait'
-      },
-      {
-        href: "images/faleportrait.jpg",
-        title: 'Male portrait'
-      }
-    ]);
-  });
+  /*
+    var myCenter = new google.maps.LatLng(22.284684, 114.147292);
 
-  var myCenter = new google.maps.LatLng(22.284684, 114.147292);
+    function initialize() {
+      var mapProp = {
+        center: myCenter,
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false
+      };
 
-  function initialize() {
-    var mapProp = {
-      center: myCenter,
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      scrollwheel: false
-    };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
 
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
+      marker.setMap(map);
+    }
 
-    marker.setMap(map);
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
+  */
 
   window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
