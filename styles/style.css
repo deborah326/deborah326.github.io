@@ -277,20 +277,7 @@ h2 {
 
 .socialMedia ul li {
   list-style-type: none;
-  float: left;
-}
-
-.socialMedia ul li a i {
-  background: #00979D;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 30px;
-  font-size: 23px;
-  text-align: center;
-  margin-right: 10px;
-  padding-top: 18%;
-  /*margin-bottom: 10px;*/
+  /*float: left;*/
 }
 
 .socialMedia ul li a i:hover {
@@ -302,6 +289,19 @@ h2 {
   font-size: 30px;
   text-align: center;
   vertical-align: center;
+  margin-right: 10px;
+  padding-top: 18%;
+  /*margin-bottom: 10px;*/
+}
+
+.socialMedia ul li a i {
+  background: #00979D;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 23px;
+  text-align: center;
   margin-right: 10px;
   padding-top: 18%;
   /*margin-bottom: 10px;*/
