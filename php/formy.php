@@ -22,7 +22,7 @@ $body = "$title
         <b>Phone:</b> $phone_field
         <br/>
         <br/>
-        <b>Message:</b>\n$message
+        <b>Message:</b>\n $message
         <br/>
         <br/>";
 

@@ -98,9 +98,11 @@ $(document).ready(function() {
     if (key !== 8 && key !== 9 && char !== "3") {
       $phone.attr("maxlength", "18");
 
+
       if ($phone.val().length === 0) {
         $phone.val($phone.val() + '+');
       }
+      /*
       if ($phone.val().length === 2) {
         $phone.val($phone.val() + ' ' + '(');
       }
@@ -113,6 +115,7 @@ $(document).ready(function() {
       if ($phone.val().length === 15) {
         $phone.val($phone.val() + '-');
       }
+      */
     }
 
     if (key !== 8 && key !== 9 && char == "3") {
@@ -121,6 +124,7 @@ $(document).ready(function() {
       if ($phone.val().length === 0) {
         $phone.val($phone.val() + '+');
       }
+      /*
       if ($phone.val().length === 3) {
         $phone.val($phone.val() + ' ' + '(');
       }
@@ -133,6 +137,7 @@ $(document).ready(function() {
       if ($phone.val().length === 16) {
         $phone.val($phone.val() + '-');
       }
+      */
     }
 
     return (key == 8 ||
@@ -184,7 +189,7 @@ $("#formy").submit(function(event) {
     var values = $(this).serialize();
 
     ajaxRequest = $.ajax({
-      url: "/php/formy.php", //make sure, you have php-script in this direction
+      url: "../php/formy.php", //make sure, you have php-script in this direction
       type: "post",
       data: values
     });
@@ -192,7 +197,7 @@ $("#formy").submit(function(event) {
     //Here we say to the user that he did everythig right, and the form is submitted...
     ajaxRequest.done(function(response, textStatus, jqXHR) {
       $("#result").removeClass("invalidRequest")
-      $("#result").html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><path class="a" d="M10,0.4A9.6,9.6,0,1,0,19.6,10,9.6,9.6,0,0,0,10,.4Zm0,17.2A7.6,7.6,0,1,1,17.6,10,7.6,7.6,0,0,1,10,17.6ZM7.5,9.75A1.64,1.64,0,0,0,9,8,1.64,1.64,0,0,0,7.5,6.25,1.64,1.64,0,0,0,6,8,1.64,1.64,0,0,0,7.5,9.75Zm5,0A1.64,1.64,0,0,0,14,8a1.64,1.64,0,0,0-1.5-1.75A1.64,1.64,0,0,0,11,8,1.64,1.64,0,0,0,12.5,9.75Zm1.84,1.59a0.76,0.76,0,0,0-1,.32A3.61,3.61,0,0,1,10,13.25a3.62,3.62,0,0,1-3.33-1.59,0.75,0.75,0,0,0-1.34.68A5.06,5.06,0,0,0,10,14.75a5.05,5.05,0,0,0,4.67-2.41A0.75,0.75,0,0,0,14.34,11.34Z" transform="translate(-0.4 -0.4)"/></svg>Submitted successfully!');
+      $("#result").html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><path class="a" d="M10,0.4A9.6,9.6,0,1,0,19.6,10,9.6,9.6,0,0,0,10,.4Zm0,17.2A7.6,7.6,0,1,1,17.6,10,7.6,7.6,0,0,1,10,17.6ZM7.5,9.75A1.64,1.64,0,0,0,9,8,1.64,1.64,0,0,0,7.5,6.25,1.64,1.64,0,0,0,6,8,1.64,1.64,0,0,0,7.5,9.75Zm5,0A1.64,1.64,0,0,0,14,8a1.64,1.64,0,0,0-1.5-1.75A1.64,1.64,0,0,0,11,8,1.64,1.64,0,0,0,12.5,9.75Zm1.84,1.59a0.76,0.76,0,0,0-1,.32A3.61,3.61,0,0,1,10,13.25a3.62,3.62,0,0,1-3.33-1.59,0.75,0.75,0,0,0-1.34.68A5.06,5.06,0,0,0,10,14.75a5.05,5.05,0,0,0,4.67-2.41A0.75,0.75,0,0,0,14.34,11.34Z" transform="translate(-0.4 -0.4)"/></svg>Submitted');
       $("#result").show().delay(5000).fadeOut('slow');
       $("#formy")[0].reset();
     });

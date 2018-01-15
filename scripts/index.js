@@ -1,3 +1,7 @@
+$(document).bind("contextmenu", function(e) {
+  e.preventDefault();
+});
+
 $(document).ready(function() {
 
   $("nav").find("li").on("click", "a", function() {
