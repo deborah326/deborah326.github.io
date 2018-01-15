@@ -1,6 +1,8 @@
+/*
 $(document).bind("contextmenu", function(e) {
   e.preventDefault();
 });
+*/
 
 $(document).ready(function() {
 

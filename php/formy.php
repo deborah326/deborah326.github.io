@@ -1,4 +1,7 @@
-﻿<?php
+<?php print(Date("l F d, Y"));
+?>
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $to = "deborah326@gmail.com";
@@ -26,6 +29,12 @@ $body = "$title
         <br/>
         <br/>";
 
-mail($to, $subject, $body, $headers);
+if (mail($to, $subject, $body, $headers))
+{
+  echo "successful";
 }
+else {
+  {
+    echo "error";
+  }
 ?>
