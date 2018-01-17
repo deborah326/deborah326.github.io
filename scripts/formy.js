@@ -189,7 +189,7 @@ $("#formy").submit(function(event) {
     var values = $(this).serialize();
 
     ajaxRequest = $.ajax({
-      url: "../php/formy.php", //make sure, you have php-script in this direction
+      url: "php/formy.php", //make sure, you have php-script in this direction
       type: "post",
       data: values
     });

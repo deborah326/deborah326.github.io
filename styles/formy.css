@@ -65,15 +65,15 @@
   top: 0;
 }
 
+#formy .input-field i svg.active {
+  fill: #1abc9c;
+}
+
 #formy .input-field i svg {
   width: 25px;
   fill: #3A3A3A;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
-
-#formy .input-field i svg.active {
-  fill: #1abc9c;
 }
 
 #formy .input-field i svg.invalid {
