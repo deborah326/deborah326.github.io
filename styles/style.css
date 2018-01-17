@@ -243,6 +243,10 @@ h2 {
   height: auto;
 }
 
+#contact h2 {
+  margin-bottom: 50px;
+}
+
 .row-fluid {
   margin-top: 30px;
 }
